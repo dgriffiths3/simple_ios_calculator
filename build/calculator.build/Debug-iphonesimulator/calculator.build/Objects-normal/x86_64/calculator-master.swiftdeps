@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "f3955d89a3c80a0c4f90f78640afe67b"
+build_time: [1530200920, 480411000]
+inputs:
+  "/Users/davidgriffiths/Documents/xcode/calculator/calculator/ViewController.swift": [1530200920, 0]
+  "/Users/davidgriffiths/Documents/xcode/calculator/calculator/AppDelegate.swift": [1530194716, 0]
