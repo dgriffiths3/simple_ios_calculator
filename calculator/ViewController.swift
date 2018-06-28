@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         roundButtons()
+        display.text = "0"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,13 +22,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var displayString: String = ""
     var plusFunc: Bool = false
     var minusFunc: Bool = false
     var multFunc: Bool = false
     var divFunc: Bool = false
     var num1: Float = 0.0
     var num2: Float = 0.0
+    var firstNumSet: Bool = false
+    var startVal: Bool = true
     
     @IBOutlet weak var display: UITextField!
     
@@ -54,43 +56,43 @@ class ViewController: UIViewController {
     @IBOutlet weak var nineButtonVar: UIButton!
     
     func roundButtons(){
-        plusButtonVar.layer.cornerRadius = 20
+        plusButtonVar.layer.cornerRadius = 15
         plusButtonVar.clipsToBounds = true
-        minusButtonVar.layer.cornerRadius = 20
+        minusButtonVar.layer.cornerRadius = 15
         minusButtonVar.clipsToBounds = true
-        multButtonVar.layer.cornerRadius = 20
+        multButtonVar.layer.cornerRadius = 15
         multButtonVar.clipsToBounds = true
-        divButtonVar.layer.cornerRadius = 20
+        divButtonVar.layer.cornerRadius = 15
         divButtonVar.clipsToBounds = true
-        acButtonVar.layer.cornerRadius = 20
+        acButtonVar.layer.cornerRadius = 15
         acButtonVar.clipsToBounds = true
-        pmButtonVar.layer.cornerRadius = 20
+        pmButtonVar.layer.cornerRadius = 15
         pmButtonVar.clipsToBounds = true
-        percentButtonVar.layer.cornerRadius = 20
+        percentButtonVar.layer.cornerRadius = 15
         percentButtonVar.clipsToBounds = true
-        equalsButtonVar.layer.cornerRadius = 20
+        equalsButtonVar.layer.cornerRadius = 15
         equalsButtonVar.clipsToBounds = true
-        pointButtonVar.layer.cornerRadius = 20
+        pointButtonVar.layer.cornerRadius = 15
         pointButtonVar.clipsToBounds = true
-        zeroButtonVar.layer.cornerRadius = 20
+        zeroButtonVar.layer.cornerRadius = 15
         zeroButtonVar.clipsToBounds = true
-        oneButtonVar.layer.cornerRadius = 20
+        oneButtonVar.layer.cornerRadius = 15
         oneButtonVar.clipsToBounds = true
-        twoButtonVar.layer.cornerRadius = 20
+        twoButtonVar.layer.cornerRadius = 15
         twoButtonVar.clipsToBounds = true
-        threeButtonVar.layer.cornerRadius = 20
+        threeButtonVar.layer.cornerRadius = 15
         threeButtonVar.clipsToBounds = true
-        fourButtonVar.layer.cornerRadius = 20
+        fourButtonVar.layer.cornerRadius = 15
         fourButtonVar.clipsToBounds = true
-        fiveButtonVar.layer.cornerRadius = 20
+        fiveButtonVar.layer.cornerRadius = 15
         fiveButtonVar.clipsToBounds = true
-        sixButtonVar.layer.cornerRadius = 20
+        sixButtonVar.layer.cornerRadius = 15
         sixButtonVar.clipsToBounds = true
-        sevenButtonVar.layer.cornerRadius = 20
+        sevenButtonVar.layer.cornerRadius = 15
         sevenButtonVar.clipsToBounds = true
-        eightButtonVar.layer.cornerRadius = 20
+        eightButtonVar.layer.cornerRadius = 15
         eightButtonVar.clipsToBounds = true
-        nineButtonVar.layer.cornerRadius = 20
+        nineButtonVar.layer.cornerRadius = 15
         nineButtonVar.clipsToBounds = true
     }
     
@@ -118,29 +120,34 @@ class ViewController: UIViewController {
     
     @IBAction func acButton(_ sender: Any) {
         resetOperators()
-        displayString = ""
-        display.text = displayString
+        display.text = "0"
+        startVal = true
     }
     
     @IBAction func pmButton(_ sender: Any) {
-        
+
         if toFloat(value: display.text!) < 0 {
-        
-            num1 = toFloat(value: display.text!) * -1
-            display.text = String(num1)
+            display.text = NSNumber(value: (toFloat(value: display.text!) * -1)).stringValue
         }
         
-        if toFloat(value: display.text!) > 0{
-         
+        if toFloat(value: display.text!) > 0 {
             display.text = "-" + display.text!
-            num1 = toFloat(value: display.text!)
         }
-        
     }
     
     @IBAction func percentButton(_ sender: Any) {
     }
-
+    
+    @IBAction func pointButton(_ sender: Any) {
+        if display.text!.count > 0 {
+            if display.text!.range(of:".") == nil {
+                firstNumSet = false
+                startVal = false
+                display.text = display.text! + "."
+            }
+        }
+    }
+    
     @IBAction func divButton(_ sender: Any) {
         resetOperators()
         divButtonVar.backgroundColor = UIColor.black
@@ -148,8 +155,7 @@ class ViewController: UIViewController {
         divFunc = true
 
         num1 = toFloat(value: display.text!)
-        displayString = ""
-        //display.text = displayString
+        firstNumSet = true
         
     }
     
@@ -160,8 +166,7 @@ class ViewController: UIViewController {
         multFunc = true
         
         num1 = toFloat(value: display.text!)
-        displayString = ""
-        //display.text = displayString
+        firstNumSet = true
     }
     
     @IBAction func minusButton(_ sender: Any) {
@@ -171,8 +176,7 @@ class ViewController: UIViewController {
         minusFunc = true
         
         num1 = toFloat(value: display.text!)
-        displayString = ""
-        //display.text = displayString
+        firstNumSet = true
     }
     
     @IBAction func plusButton(_ sender: Any) {
@@ -182,91 +186,158 @@ class ViewController: UIViewController {
         plusFunc = true
         
         num1 = toFloat(value: display.text!)
-        displayString = ""
-        //display.text = displayString
-        
+        firstNumSet = true
     }
     
     @IBAction func zeroButton(_ sender: Any) {
-        if displayString.count > 0{
-            displayString = displayString + "0"
-            display.text = displayString
+        print(display.text!)
+        
+        if display.text! != "0" {
+            print("here")
+            if firstNumSet == true{
+                firstNumSet = false
+                display.text = "0"
+                print(display.text!)
+            } else {
+                display.text = display.text! + "0"
+            }
         }
     }
     
     @IBAction func oneButton(_ sender: Any) {
-        displayString = displayString + "1"
-        display.text = displayString
+        if startVal == true {
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true {
+            firstNumSet = false
+            display.text = "1"
+        } else {
+            display.text = display.text! + "1"
+        }
     }
     
     @IBAction func twoButton(_ sender: Any) {
-        displayString = displayString + "2"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "2"
+        } else {
+            display.text = display.text! + "2"
+        }
     }
     
     @IBAction func threeButton(_ sender: Any) {
-        displayString = displayString + "3"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "3"
+        } else {
+            display.text = display.text! + "3"
+        }
     }
     
     @IBAction func fourButton(_ sender: Any) {
-        displayString = displayString + "4"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "4"
+        } else {
+            display.text = display.text! + "4"
+        }
     }
     
     @IBAction func fiveButton(_ sender: Any) {
-        displayString = displayString + "5"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "5"
+        } else {
+            display.text = display.text! + "5"
+        }
     }
     
     @IBAction func sixButton(_ sender: Any) {
-        displayString = displayString + "6"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "6"
+        } else {
+            display.text = display.text! + "6"
+        }
     }
     
     @IBAction func sevenButton(_ sender: Any) {
-        displayString = displayString + "7"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "7"
+        } else {
+            display.text = "7"
+        }
     }
     
     @IBAction func eightButton(_ sender: Any) {
-        displayString = displayString + "8"
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "8"
+        } else {
+            display.text = display.text! + "8"
+        }
     }
     
     @IBAction func nineButton(_ sender: Any) {
-        displayString = displayString + "9"
-        display.text = displayString
-    }
-    
-    @IBAction func pointButton(_ sender: Any) {
-        if displayString.count > 0{
-        displayString = displayString + "."
-        display.text = displayString
+        if startVal == true{
+            startVal = false
+            display.text = ""
+        }
+        if firstNumSet == true{
+            firstNumSet = false
+            display.text = "9"
+        } else {
+            display.text = display.text! + "9"
         }
     }
     
     @IBAction func equalsButton(_ sender: Any) {
         
         if plusFunc == true{
-            display.text = String(num1 + toFloat(value: displayString))
+            display.text = NSNumber(value: (num1 + toFloat(value: display.text!))).stringValue
             num1 = toFloat(value: display.text!)
-            displayString = ""
         }
         if minusFunc == true{
-            display.text = String(num1 - toFloat(value: displayString))
+            display.text = NSNumber(value: (num1 - toFloat(value: display.text!))).stringValue
             num1 = toFloat(value: display.text!)
-            displayString = ""
         }
         if multFunc == true{
-            display.text = String(num1 * toFloat(value: displayString))
+            display.text = NSNumber(value: (num1 * toFloat(value: display.text!))).stringValue
             num1 = toFloat(value: display.text!)
-            displayString = ""
         }
         if divFunc == true{
-            display.text = String(num1 / toFloat(value: displayString))
+            display.text = NSNumber(value: (num1 / toFloat(value: display.text!))).stringValue
             num1 = toFloat(value: display.text!)
-            displayString = ""
         }
         
         resetOperators()

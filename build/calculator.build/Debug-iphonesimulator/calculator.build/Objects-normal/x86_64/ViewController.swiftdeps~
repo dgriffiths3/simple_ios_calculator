@@ -1,23 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "ViewController"
-- "percentButton"
-- "divButton"
-- "multiplyButton"
-- "minusButton"
-- "plusButton"
-- "zeroButton"
-- "oneButton"
-- "twoButton"
-- "threeButton"
-- "fourButton"
-- "fiveButton"
-- "sixButton"
-- "sevenButton"
-- "eightButton"
-- "nineButton"
-- "pointButton"
-- "equalsButton"
 provides-nominal:
 - "10calculator14ViewControllerC"
 provides-member:
@@ -27,27 +10,45 @@ provides-dynamic-lookup:
 - "acButtonVar"
 - "didReceiveMemoryWarning"
 - "display"
+- "divButton"
 - "divButtonVar"
+- "eightButton"
 - "eightButtonVar"
+- "equalsButton"
 - "equalsButtonVar"
+- "fiveButton"
 - "fiveButtonVar"
+- "fourButton"
 - "fourButtonVar"
+- "minusButton"
 - "minusButtonVar"
 - "multButtonVar"
+- "multiplyButton"
+- "nineButton"
 - "nineButtonVar"
+- "oneButton"
 - "oneButtonVar"
+- "percentButton"
 - "percentButtonVar"
+- "plusButton"
 - "plusButtonVar"
 - "pmButton"
 - "pmButtonVar"
+- "pointButton"
 - "pointButtonVar"
+- "sevenButton"
 - "sevenButtonVar"
+- "sixButton"
 - "sixButtonVar"
+- "threeButton"
 - "threeButtonVar"
+- "twoButton"
 - "twoButtonVar"
 - "viewDidLoad"
+- "zeroButton"
 - "zeroButtonVar"
 depends-top-level:
+- !private "!="
 - !private "*"
 - !private "+"
 - !private "-"
@@ -60,47 +61,21 @@ depends-top-level:
 - "BooleanLiteralType"
 - "CastingPrecedence"
 - "Float"
+- !private "NSNumber"
 - !private "NSString"
 - "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "UIButton"
 - !private "UIColor"
 - "UITextField"
 - "UIViewController"
 - !private "UnicodeScalarType"
 - "ViewController"
-- !private "display"
-- !private "displayString"
-- "divButton"
-- !private "divButtonVar"
-- !private "divFunc"
-- "eightButton"
-- "equalsButton"
-- "fiveButton"
-- "fourButton"
-- "minusButton"
-- !private "minusButtonVar"
-- !private "minusFunc"
-- !private "multButtonVar"
-- !private "multFunc"
-- "multiplyButton"
-- "nineButton"
-- !private "num1"
-- "oneButton"
-- "percentButton"
-- "plusButton"
-- !private "plusButtonVar"
-- !private "plusFunc"
-- "pointButton"
-- !private "resetOperators"
-- "sevenButton"
-- "sixButton"
-- "threeButton"
-- !private "toFloat"
-- "twoButton"
-- "zeroButton"
+- !private "print"
 depends-member:
-- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "range"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
@@ -109,6 +84,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "setTitleColor"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
+- !private ["s7CVarArgP", "NSNumber"]
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", ""]
@@ -118,17 +94,18 @@ depends-member:
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "clipsToBounds"]
 - !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "display"]
-- !private ["s7CVarArgP", "displayString"]
 - !private ["s7CVarArgP", "divButtonVar"]
 - !private ["s7CVarArgP", "divFunc"]
 - !private ["s7CVarArgP", "eightButtonVar"]
 - !private ["s7CVarArgP", "equalsButtonVar"]
+- !private ["s7CVarArgP", "firstNumSet"]
 - !private ["s7CVarArgP", "fiveButtonVar"]
 - !private ["s7CVarArgP", "floatValue"]
 - !private ["s7CVarArgP", "fourButtonVar"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "minusButtonVar"]
 - !private ["s7CVarArgP", "minusFunc"]
@@ -142,11 +119,15 @@ depends-member:
 - !private ["s7CVarArgP", "plusFunc"]
 - !private ["s7CVarArgP", "pmButtonVar"]
 - !private ["s7CVarArgP", "pointButtonVar"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "range"]
 - !private ["s7CVarArgP", "resetOperators"]
 - !private ["s7CVarArgP", "roundButtons"]
 - !private ["s7CVarArgP", "setTitleColor"]
 - !private ["s7CVarArgP", "sevenButtonVar"]
 - !private ["s7CVarArgP", "sixButtonVar"]
+- !private ["s7CVarArgP", "startVal"]
+- !private ["s7CVarArgP", "stringValue"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "threeButtonVar"]
 - !private ["s7CVarArgP", "toFloat"]
@@ -154,8 +135,13 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s7CVarArgP", "zeroButtonVar"]
-- ["s10CollectionP", "init"]
-- ["s10ComparableP", "init"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "range"]
+- !private ["s10ComparableP", "count"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "range"]
+- !private ["s28CustomDebugStringConvertibleP", "NSNumber"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -164,17 +150,18 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "clipsToBounds"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "display"]
-- !private ["s28CustomDebugStringConvertibleP", "displayString"]
 - !private ["s28CustomDebugStringConvertibleP", "divButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "divFunc"]
 - !private ["s28CustomDebugStringConvertibleP", "eightButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "equalsButtonVar"]
+- !private ["s28CustomDebugStringConvertibleP", "firstNumSet"]
 - !private ["s28CustomDebugStringConvertibleP", "fiveButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "floatValue"]
 - !private ["s28CustomDebugStringConvertibleP", "fourButtonVar"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "minusButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "minusFunc"]
@@ -188,11 +175,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "plusFunc"]
 - !private ["s28CustomDebugStringConvertibleP", "pmButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "pointButtonVar"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "range"]
 - !private ["s28CustomDebugStringConvertibleP", "resetOperators"]
 - !private ["s28CustomDebugStringConvertibleP", "roundButtons"]
 - !private ["s28CustomDebugStringConvertibleP", "setTitleColor"]
 - !private ["s28CustomDebugStringConvertibleP", "sevenButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "sixButtonVar"]
+- !private ["s28CustomDebugStringConvertibleP", "startVal"]
+- !private ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "threeButtonVar"]
 - !private ["s28CustomDebugStringConvertibleP", "toFloat"]
@@ -201,11 +192,17 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "zeroButtonVar"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "count"]
 - !private ["s29CustomPlaygroundQuickLookableP", "floatValue"]
-- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "range"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "black"]
-- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "range"]
+- !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "NSNumber"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", ""]
@@ -215,17 +212,18 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "clipsToBounds"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "display"]
-- !private ["s23CustomStringConvertibleP", "displayString"]
 - !private ["s23CustomStringConvertibleP", "divButtonVar"]
 - !private ["s23CustomStringConvertibleP", "divFunc"]
 - !private ["s23CustomStringConvertibleP", "eightButtonVar"]
 - !private ["s23CustomStringConvertibleP", "equalsButtonVar"]
+- !private ["s23CustomStringConvertibleP", "firstNumSet"]
 - !private ["s23CustomStringConvertibleP", "fiveButtonVar"]
 - !private ["s23CustomStringConvertibleP", "floatValue"]
 - !private ["s23CustomStringConvertibleP", "fourButtonVar"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "minusButtonVar"]
 - !private ["s23CustomStringConvertibleP", "minusFunc"]
@@ -239,11 +237,15 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "plusFunc"]
 - !private ["s23CustomStringConvertibleP", "pmButtonVar"]
 - !private ["s23CustomStringConvertibleP", "pointButtonVar"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "range"]
 - !private ["s23CustomStringConvertibleP", "resetOperators"]
 - !private ["s23CustomStringConvertibleP", "roundButtons"]
 - !private ["s23CustomStringConvertibleP", "setTitleColor"]
 - !private ["s23CustomStringConvertibleP", "sevenButtonVar"]
 - !private ["s23CustomStringConvertibleP", "sixButtonVar"]
+- !private ["s23CustomStringConvertibleP", "startVal"]
+- !private ["s23CustomStringConvertibleP", "stringValue"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "threeButtonVar"]
 - !private ["s23CustomStringConvertibleP", "toFloat"]
@@ -253,10 +255,17 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "zeroButtonVar"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "black"]
-- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "range"]
+- !private ["s9DecodableP", "white"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "black"]
-- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "range"]
+- !private ["s9EncodableP", "white"]
+- !private ["s9EquatableP", "NSNumber"]
 - !private ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIColor"]
 - ["s9EquatableP", ""]
@@ -266,17 +275,18 @@ depends-member:
 - !private ["s9EquatableP", "black"]
 - !private ["s9EquatableP", "clipsToBounds"]
 - !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "display"]
-- !private ["s9EquatableP", "displayString"]
 - !private ["s9EquatableP", "divButtonVar"]
 - !private ["s9EquatableP", "divFunc"]
 - !private ["s9EquatableP", "eightButtonVar"]
 - !private ["s9EquatableP", "equalsButtonVar"]
+- !private ["s9EquatableP", "firstNumSet"]
 - !private ["s9EquatableP", "fiveButtonVar"]
 - !private ["s9EquatableP", "floatValue"]
 - !private ["s9EquatableP", "fourButtonVar"]
-- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "layer"]
 - !private ["s9EquatableP", "minusButtonVar"]
 - !private ["s9EquatableP", "minusFunc"]
@@ -291,11 +301,15 @@ depends-member:
 - !private ["s9EquatableP", "plusFunc"]
 - !private ["s9EquatableP", "pmButtonVar"]
 - !private ["s9EquatableP", "pointButtonVar"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "range"]
 - !private ["s9EquatableP", "resetOperators"]
 - !private ["s9EquatableP", "roundButtons"]
 - !private ["s9EquatableP", "setTitleColor"]
 - !private ["s9EquatableP", "sevenButtonVar"]
 - !private ["s9EquatableP", "sixButtonVar"]
+- !private ["s9EquatableP", "startVal"]
+- !private ["s9EquatableP", "stringValue"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "threeButtonVar"]
 - !private ["s9EquatableP", "toFloat"]
@@ -305,13 +319,27 @@ depends-member:
 - !private ["s9EquatableP", "zeroButtonVar"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "init"]
+- !private ["s27ExpressibleByBooleanLiteralP", "stringValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "floatValue"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "range"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "stringValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "stringValue"]
 - !private ["s23ExpressibleByNilLiteralP", "black"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
 - !private ["s26ExpressibleByStringLiteralP", "floatValue"]
-- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "range"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "floatValue"]
-- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "range"]
+- !private ["s8HashableP", "NSNumber"]
 - !private ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIColor"]
 - ["s8HashableP", ""]
@@ -321,17 +349,18 @@ depends-member:
 - !private ["s8HashableP", "black"]
 - !private ["s8HashableP", "clipsToBounds"]
 - !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "count"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "display"]
-- !private ["s8HashableP", "displayString"]
 - !private ["s8HashableP", "divButtonVar"]
 - !private ["s8HashableP", "divFunc"]
 - !private ["s8HashableP", "eightButtonVar"]
 - !private ["s8HashableP", "equalsButtonVar"]
+- !private ["s8HashableP", "firstNumSet"]
 - !private ["s8HashableP", "fiveButtonVar"]
 - !private ["s8HashableP", "floatValue"]
 - !private ["s8HashableP", "fourButtonVar"]
-- ["s8HashableP", "init"]
+- !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "layer"]
 - !private ["s8HashableP", "minusButtonVar"]
 - !private ["s8HashableP", "minusFunc"]
@@ -345,11 +374,15 @@ depends-member:
 - !private ["s8HashableP", "plusFunc"]
 - !private ["s8HashableP", "pmButtonVar"]
 - !private ["s8HashableP", "pointButtonVar"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "range"]
 - !private ["s8HashableP", "resetOperators"]
 - !private ["s8HashableP", "roundButtons"]
 - !private ["s8HashableP", "setTitleColor"]
 - !private ["s8HashableP", "sevenButtonVar"]
 - !private ["s8HashableP", "sixButtonVar"]
+- !private ["s8HashableP", "startVal"]
+- !private ["s8HashableP", "stringValue"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "threeButtonVar"]
 - !private ["s8HashableP", "toFloat"]
@@ -358,8 +391,13 @@ depends-member:
 - !private ["s8HashableP", "white"]
 - !private ["s8HashableP", "zeroButtonVar"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- ["s25LosslessStringConvertibleP", "init"]
-- ["s10MirrorPathP", "init"]
+- !private ["s25LosslessStringConvertibleP", "count"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "range"]
+- !private ["s10MirrorPathP", "count"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "range"]
+- !private ["So8NSCodingP", "NSNumber"]
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", ""]
@@ -368,13 +406,14 @@ depends-member:
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "clipsToBounds"]
 - !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "count"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "display"]
-- !private ["So8NSCodingP", "displayString"]
 - !private ["So8NSCodingP", "divButtonVar"]
 - !private ["So8NSCodingP", "divFunc"]
 - !private ["So8NSCodingP", "eightButtonVar"]
 - !private ["So8NSCodingP", "equalsButtonVar"]
+- !private ["So8NSCodingP", "firstNumSet"]
 - !private ["So8NSCodingP", "fiveButtonVar"]
 - !private ["So8NSCodingP", "floatValue"]
 - !private ["So8NSCodingP", "fourButtonVar"]
@@ -392,11 +431,15 @@ depends-member:
 - !private ["So8NSCodingP", "plusFunc"]
 - !private ["So8NSCodingP", "pmButtonVar"]
 - !private ["So8NSCodingP", "pointButtonVar"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "range"]
 - !private ["So8NSCodingP", "resetOperators"]
 - !private ["So8NSCodingP", "roundButtons"]
 - !private ["So8NSCodingP", "setTitleColor"]
 - !private ["So8NSCodingP", "sevenButtonVar"]
 - !private ["So8NSCodingP", "sixButtonVar"]
+- !private ["So8NSCodingP", "startVal"]
+- !private ["So8NSCodingP", "stringValue"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "threeButtonVar"]
 - !private ["So8NSCodingP", "toFloat"]
@@ -405,19 +448,24 @@ depends-member:
 - !private ["So8NSCodingP", "white"]
 - !private ["So8NSCodingP", "zeroButtonVar"]
 - !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "count"]
 - !private ["So9NSCopyingP", "floatValue"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "range"]
+- !private ["So9NSCopyingP", "stringValue"]
 - !private ["So9NSCopyingP", "white"]
+- !private ["So26NSExtensionRequestHandlingP", "NSNumber"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "acButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "display"]
-- !private ["So26NSExtensionRequestHandlingP", "displayString"]
 - !private ["So26NSExtensionRequestHandlingP", "divButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "divFunc"]
 - !private ["So26NSExtensionRequestHandlingP", "eightButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "equalsButtonVar"]
+- !private ["So26NSExtensionRequestHandlingP", "firstNumSet"]
 - !private ["So26NSExtensionRequestHandlingP", "fiveButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "fourButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
@@ -433,24 +481,35 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "plusFunc"]
 - !private ["So26NSExtensionRequestHandlingP", "pmButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "pointButtonVar"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "resetOperators"]
 - !private ["So26NSExtensionRequestHandlingP", "roundButtons"]
 - !private ["So26NSExtensionRequestHandlingP", "sevenButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "sixButtonVar"]
+- !private ["So26NSExtensionRequestHandlingP", "startVal"]
 - !private ["So26NSExtensionRequestHandlingP", "threeButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "toFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "twoButtonVar"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "zeroButtonVar"]
 - !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "count"]
 - !private ["So21NSItemProviderReadingP", "floatValue"]
+- !private ["So21NSItemProviderReadingP", "range"]
 - !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "count"]
 - !private ["So21NSItemProviderWritingP", "floatValue"]
+- !private ["So21NSItemProviderWritingP", "range"]
 - !private ["So21NSItemProviderWritingP", "white"]
+- !private ["So16NSMutableCopyingP", "count"]
 - !private ["So16NSMutableCopyingP", "floatValue"]
+- !private ["So16NSMutableCopyingP", "range"]
+- !private ["So8NSNumberC", "init"]
+- !private ["So8NSNumberC", "stringValue"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Float"]
+- !private ["So8NSObjectC", "NSNumber"]
 - !private ["So8NSObjectC", "NSString"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
@@ -462,44 +521,67 @@ depends-member:
 - !private ["So8NSObjectC", "black"]
 - !private ["So8NSObjectC", "clipsToBounds"]
 - !private ["So8NSObjectC", "cornerRadius"]
+- !private ["So8NSObjectC", "count"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "display"]
-- ["So8NSObjectC", "displayString"]
+- ["So8NSObjectC", "divButton"]
 - ["So8NSObjectC", "divButtonVar"]
 - ["So8NSObjectC", "divFunc"]
+- ["So8NSObjectC", "eightButton"]
 - ["So8NSObjectC", "eightButtonVar"]
+- ["So8NSObjectC", "equalsButton"]
 - ["So8NSObjectC", "equalsButtonVar"]
+- ["So8NSObjectC", "firstNumSet"]
+- ["So8NSObjectC", "fiveButton"]
 - ["So8NSObjectC", "fiveButtonVar"]
 - !private ["So8NSObjectC", "floatValue"]
+- ["So8NSObjectC", "fourButton"]
 - ["So8NSObjectC", "fourButtonVar"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "minusButton"]
 - ["So8NSObjectC", "minusButtonVar"]
 - ["So8NSObjectC", "minusFunc"]
 - ["So8NSObjectC", "multButtonVar"]
 - ["So8NSObjectC", "multFunc"]
+- ["So8NSObjectC", "multiplyButton"]
+- ["So8NSObjectC", "nineButton"]
 - ["So8NSObjectC", "nineButtonVar"]
 - ["So8NSObjectC", "num1"]
 - ["So8NSObjectC", "num2"]
+- ["So8NSObjectC", "oneButton"]
 - ["So8NSObjectC", "oneButtonVar"]
+- ["So8NSObjectC", "percentButton"]
 - ["So8NSObjectC", "percentButtonVar"]
+- ["So8NSObjectC", "plusButton"]
 - ["So8NSObjectC", "plusButtonVar"]
 - ["So8NSObjectC", "plusFunc"]
 - ["So8NSObjectC", "pmButton"]
 - ["So8NSObjectC", "pmButtonVar"]
+- ["So8NSObjectC", "pointButton"]
 - ["So8NSObjectC", "pointButtonVar"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "range"]
 - ["So8NSObjectC", "resetOperators"]
 - ["So8NSObjectC", "roundButtons"]
 - !private ["So8NSObjectC", "setTitleColor"]
+- ["So8NSObjectC", "sevenButton"]
 - ["So8NSObjectC", "sevenButtonVar"]
+- ["So8NSObjectC", "sixButton"]
 - ["So8NSObjectC", "sixButtonVar"]
+- ["So8NSObjectC", "startVal"]
+- !private ["So8NSObjectC", "stringValue"]
 - !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "threeButton"]
 - ["So8NSObjectC", "threeButtonVar"]
 - ["So8NSObjectC", "toFloat"]
+- ["So8NSObjectC", "twoButton"]
 - ["So8NSObjectC", "twoButtonVar"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "white"]
+- ["So8NSObjectC", "zeroButton"]
 - ["So8NSObjectC", "zeroButtonVar"]
+- !private ["So16NSObjectProtocolP", "NSNumber"]
 - !private ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - ["So16NSObjectProtocolP", ""]
@@ -508,13 +590,14 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "black"]
 - !private ["So16NSObjectProtocolP", "clipsToBounds"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "count"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "display"]
-- !private ["So16NSObjectProtocolP", "displayString"]
 - !private ["So16NSObjectProtocolP", "divButtonVar"]
 - !private ["So16NSObjectProtocolP", "divFunc"]
 - !private ["So16NSObjectProtocolP", "eightButtonVar"]
 - !private ["So16NSObjectProtocolP", "equalsButtonVar"]
+- !private ["So16NSObjectProtocolP", "firstNumSet"]
 - !private ["So16NSObjectProtocolP", "fiveButtonVar"]
 - !private ["So16NSObjectProtocolP", "floatValue"]
 - !private ["So16NSObjectProtocolP", "fourButtonVar"]
@@ -532,11 +615,15 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "plusFunc"]
 - !private ["So16NSObjectProtocolP", "pmButtonVar"]
 - !private ["So16NSObjectProtocolP", "pointButtonVar"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "range"]
 - !private ["So16NSObjectProtocolP", "resetOperators"]
 - !private ["So16NSObjectProtocolP", "roundButtons"]
 - !private ["So16NSObjectProtocolP", "setTitleColor"]
 - !private ["So16NSObjectProtocolP", "sevenButtonVar"]
 - !private ["So16NSObjectProtocolP", "sixButtonVar"]
+- !private ["So16NSObjectProtocolP", "startVal"]
+- !private ["So16NSObjectProtocolP", "stringValue"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "threeButtonVar"]
 - !private ["So16NSObjectProtocolP", "toFloat"]
@@ -546,19 +633,39 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "zeroButtonVar"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["So14NSSecureCodingP", "count"]
 - !private ["So14NSSecureCodingP", "floatValue"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "range"]
+- !private ["So14NSSecureCodingP", "stringValue"]
 - !private ["So14NSSecureCodingP", "white"]
+- !private ["So8NSStringC", "count"]
 - !private ["So8NSStringC", "floatValue"]
+- !private ["So8NSStringC", "range"]
+- !private ["So7NSValueC", "stringValue"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["Sq", "black"]
-- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["Sq", "white"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "range"]
 - !private ["s16RawRepresentableP", "normal"]
-- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "range"]
 - !private ["s10SetAlgebraP", "normal"]
-- ["SS", "init"]
-- ["s14StringProtocolP", "init"]
-- ["s16TextOutputStreamP", "init"]
-- ["s20TextOutputStreamableP", "init"]
+- !private ["SS", "count"]
+- !private ["SS", "init"]
+- !private ["SS", "range"]
+- !private ["s14StringProtocolP", "count"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "range"]
+- !private ["s16TextOutputStreamP", "count"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "range"]
+- !private ["s20TextOutputStreamableP", "count"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "range"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "clipsToBounds"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
@@ -573,6 +680,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "setTitleColor"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "NSNumber"]
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", ""]
@@ -581,11 +689,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "clipsToBounds"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "display"]
-- !private ["So21UIAppearanceContainerP", "displayString"]
 - !private ["So21UIAppearanceContainerP", "divButtonVar"]
 - !private ["So21UIAppearanceContainerP", "divFunc"]
 - !private ["So21UIAppearanceContainerP", "eightButtonVar"]
 - !private ["So21UIAppearanceContainerP", "equalsButtonVar"]
+- !private ["So21UIAppearanceContainerP", "firstNumSet"]
 - !private ["So21UIAppearanceContainerP", "fiveButtonVar"]
 - !private ["So21UIAppearanceContainerP", "fourButtonVar"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -602,11 +710,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "plusFunc"]
 - !private ["So21UIAppearanceContainerP", "pmButtonVar"]
 - !private ["So21UIAppearanceContainerP", "pointButtonVar"]
+- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "resetOperators"]
 - !private ["So21UIAppearanceContainerP", "roundButtons"]
 - !private ["So21UIAppearanceContainerP", "setTitleColor"]
 - !private ["So21UIAppearanceContainerP", "sevenButtonVar"]
 - !private ["So21UIAppearanceContainerP", "sixButtonVar"]
+- !private ["So21UIAppearanceContainerP", "startVal"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "threeButtonVar"]
 - !private ["So21UIAppearanceContainerP", "toFloat"]
@@ -619,17 +729,18 @@ depends-member:
 - !private ["So8UIButtonC", "setTitleColor"]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "white"]
+- !private ["So18UIContentContainerP", "NSNumber"]
 - !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "acButtonVar"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "display"]
-- !private ["So18UIContentContainerP", "displayString"]
 - !private ["So18UIContentContainerP", "divButtonVar"]
 - !private ["So18UIContentContainerP", "divFunc"]
 - !private ["So18UIContentContainerP", "eightButtonVar"]
 - !private ["So18UIContentContainerP", "equalsButtonVar"]
+- !private ["So18UIContentContainerP", "firstNumSet"]
 - !private ["So18UIContentContainerP", "fiveButtonVar"]
 - !private ["So18UIContentContainerP", "fourButtonVar"]
 - !private ["So18UIContentContainerP", "init"]
@@ -645,10 +756,12 @@ depends-member:
 - !private ["So18UIContentContainerP", "plusFunc"]
 - !private ["So18UIContentContainerP", "pmButtonVar"]
 - !private ["So18UIContentContainerP", "pointButtonVar"]
+- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "resetOperators"]
 - !private ["So18UIContentContainerP", "roundButtons"]
 - !private ["So18UIContentContainerP", "sevenButtonVar"]
 - !private ["So18UIContentContainerP", "sixButtonVar"]
+- !private ["So18UIContentContainerP", "startVal"]
 - !private ["So18UIContentContainerP", "threeButtonVar"]
 - !private ["So18UIContentContainerP", "toFloat"]
 - !private ["So18UIContentContainerP", "twoButtonVar"]
@@ -671,6 +784,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "setTitleColor"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "NSNumber"]
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -679,11 +793,11 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "clipsToBounds"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "display"]
-- !private ["So18UIFocusEnvironmentP", "displayString"]
 - !private ["So18UIFocusEnvironmentP", "divButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "divFunc"]
 - !private ["So18UIFocusEnvironmentP", "eightButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "equalsButtonVar"]
+- !private ["So18UIFocusEnvironmentP", "firstNumSet"]
 - !private ["So18UIFocusEnvironmentP", "fiveButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "fourButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -700,11 +814,13 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "plusFunc"]
 - !private ["So18UIFocusEnvironmentP", "pmButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "pointButtonVar"]
+- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "resetOperators"]
 - !private ["So18UIFocusEnvironmentP", "roundButtons"]
 - !private ["So18UIFocusEnvironmentP", "setTitleColor"]
 - !private ["So18UIFocusEnvironmentP", "sevenButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "sixButtonVar"]
+- !private ["So18UIFocusEnvironmentP", "startVal"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "threeButtonVar"]
 - !private ["So18UIFocusEnvironmentP", "toFloat"]
@@ -717,6 +833,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "setTitleColor"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So10UIKeyInputP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSNumber"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -725,11 +842,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "display"]
-- !private ["So30UIPasteConfigurationSupportingP", "displayString"]
 - !private ["So30UIPasteConfigurationSupportingP", "divButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "divFunc"]
 - !private ["So30UIPasteConfigurationSupportingP", "eightButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "equalsButtonVar"]
+- !private ["So30UIPasteConfigurationSupportingP", "firstNumSet"]
 - !private ["So30UIPasteConfigurationSupportingP", "fiveButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "fourButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -746,11 +863,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "plusFunc"]
 - !private ["So30UIPasteConfigurationSupportingP", "pmButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "pointButtonVar"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "resetOperators"]
 - !private ["So30UIPasteConfigurationSupportingP", "roundButtons"]
 - !private ["So30UIPasteConfigurationSupportingP", "setTitleColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "sevenButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "sixButtonVar"]
+- !private ["So30UIPasteConfigurationSupportingP", "startVal"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "threeButtonVar"]
 - !private ["So30UIPasteConfigurationSupportingP", "toFloat"]
@@ -759,6 +878,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "zeroButtonVar"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "Float"]
+- !private ["So11UIResponderC", "NSNumber"]
 - !private ["So11UIResponderC", "NSString"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
@@ -770,40 +890,60 @@ depends-member:
 - !private ["So11UIResponderC", "clipsToBounds"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "display"]
-- ["So11UIResponderC", "displayString"]
+- ["So11UIResponderC", "divButton"]
 - ["So11UIResponderC", "divButtonVar"]
 - ["So11UIResponderC", "divFunc"]
+- ["So11UIResponderC", "eightButton"]
 - ["So11UIResponderC", "eightButtonVar"]
+- ["So11UIResponderC", "equalsButton"]
 - ["So11UIResponderC", "equalsButtonVar"]
+- ["So11UIResponderC", "firstNumSet"]
+- ["So11UIResponderC", "fiveButton"]
 - ["So11UIResponderC", "fiveButtonVar"]
+- ["So11UIResponderC", "fourButton"]
 - ["So11UIResponderC", "fourButtonVar"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "minusButton"]
 - ["So11UIResponderC", "minusButtonVar"]
 - ["So11UIResponderC", "minusFunc"]
 - ["So11UIResponderC", "multButtonVar"]
 - ["So11UIResponderC", "multFunc"]
+- ["So11UIResponderC", "multiplyButton"]
+- ["So11UIResponderC", "nineButton"]
 - ["So11UIResponderC", "nineButtonVar"]
 - ["So11UIResponderC", "num1"]
 - ["So11UIResponderC", "num2"]
+- ["So11UIResponderC", "oneButton"]
 - ["So11UIResponderC", "oneButtonVar"]
+- ["So11UIResponderC", "percentButton"]
 - ["So11UIResponderC", "percentButtonVar"]
+- ["So11UIResponderC", "plusButton"]
 - ["So11UIResponderC", "plusButtonVar"]
 - ["So11UIResponderC", "plusFunc"]
 - ["So11UIResponderC", "pmButton"]
 - ["So11UIResponderC", "pmButtonVar"]
+- ["So11UIResponderC", "pointButton"]
 - ["So11UIResponderC", "pointButtonVar"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "resetOperators"]
 - ["So11UIResponderC", "roundButtons"]
 - !private ["So11UIResponderC", "setTitleColor"]
+- ["So11UIResponderC", "sevenButton"]
 - ["So11UIResponderC", "sevenButtonVar"]
+- ["So11UIResponderC", "sixButton"]
 - ["So11UIResponderC", "sixButtonVar"]
+- ["So11UIResponderC", "startVal"]
 - !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "threeButton"]
 - ["So11UIResponderC", "threeButtonVar"]
 - ["So11UIResponderC", "toFloat"]
+- ["So11UIResponderC", "twoButton"]
 - ["So11UIResponderC", "twoButtonVar"]
 - ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "zeroButton"]
 - ["So11UIResponderC", "zeroButtonVar"]
+- !private ["So30UIResponderStandardEditActionsP", "NSNumber"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -812,11 +952,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "clipsToBounds"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "display"]
-- !private ["So30UIResponderStandardEditActionsP", "displayString"]
 - !private ["So30UIResponderStandardEditActionsP", "divButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "divFunc"]
 - !private ["So30UIResponderStandardEditActionsP", "eightButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "equalsButtonVar"]
+- !private ["So30UIResponderStandardEditActionsP", "firstNumSet"]
 - !private ["So30UIResponderStandardEditActionsP", "fiveButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "fourButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -833,11 +973,13 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "plusFunc"]
 - !private ["So30UIResponderStandardEditActionsP", "pmButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "pointButtonVar"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "resetOperators"]
 - !private ["So30UIResponderStandardEditActionsP", "roundButtons"]
 - !private ["So30UIResponderStandardEditActionsP", "setTitleColor"]
 - !private ["So30UIResponderStandardEditActionsP", "sevenButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "sixButtonVar"]
+- !private ["So30UIResponderStandardEditActionsP", "startVal"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "threeButtonVar"]
 - !private ["So30UIResponderStandardEditActionsP", "toFloat"]
@@ -848,17 +990,18 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "clipsToBounds"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setTitleColor"]
+- !private ["So16UIStateRestoringP", "NSNumber"]
 - !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "acButtonVar"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "display"]
-- !private ["So16UIStateRestoringP", "displayString"]
 - !private ["So16UIStateRestoringP", "divButtonVar"]
 - !private ["So16UIStateRestoringP", "divFunc"]
 - !private ["So16UIStateRestoringP", "eightButtonVar"]
 - !private ["So16UIStateRestoringP", "equalsButtonVar"]
+- !private ["So16UIStateRestoringP", "firstNumSet"]
 - !private ["So16UIStateRestoringP", "fiveButtonVar"]
 - !private ["So16UIStateRestoringP", "fourButtonVar"]
 - !private ["So16UIStateRestoringP", "init"]
@@ -874,10 +1017,12 @@ depends-member:
 - !private ["So16UIStateRestoringP", "plusFunc"]
 - !private ["So16UIStateRestoringP", "pmButtonVar"]
 - !private ["So16UIStateRestoringP", "pointButtonVar"]
+- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "resetOperators"]
 - !private ["So16UIStateRestoringP", "roundButtons"]
 - !private ["So16UIStateRestoringP", "sevenButtonVar"]
 - !private ["So16UIStateRestoringP", "sixButtonVar"]
+- !private ["So16UIStateRestoringP", "startVal"]
 - !private ["So16UIStateRestoringP", "threeButtonVar"]
 - !private ["So16UIStateRestoringP", "toFloat"]
 - !private ["So16UIStateRestoringP", "twoButtonVar"]
@@ -889,6 +1034,7 @@ depends-member:
 - !private ["So11UITextInputP", "text"]
 - !private ["So17UITextInputTraitsP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "NSNumber"]
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", ""]
@@ -897,11 +1043,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "clipsToBounds"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "display"]
-- !private ["So18UITraitEnvironmentP", "displayString"]
 - !private ["So18UITraitEnvironmentP", "divButtonVar"]
 - !private ["So18UITraitEnvironmentP", "divFunc"]
 - !private ["So18UITraitEnvironmentP", "eightButtonVar"]
 - !private ["So18UITraitEnvironmentP", "equalsButtonVar"]
+- !private ["So18UITraitEnvironmentP", "firstNumSet"]
 - !private ["So18UITraitEnvironmentP", "fiveButtonVar"]
 - !private ["So18UITraitEnvironmentP", "fourButtonVar"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -918,11 +1064,13 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "plusFunc"]
 - !private ["So18UITraitEnvironmentP", "pmButtonVar"]
 - !private ["So18UITraitEnvironmentP", "pointButtonVar"]
+- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "resetOperators"]
 - !private ["So18UITraitEnvironmentP", "roundButtons"]
 - !private ["So18UITraitEnvironmentP", "setTitleColor"]
 - !private ["So18UITraitEnvironmentP", "sevenButtonVar"]
 - !private ["So18UITraitEnvironmentP", "sixButtonVar"]
+- !private ["So18UITraitEnvironmentP", "startVal"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "threeButtonVar"]
 - !private ["So18UITraitEnvironmentP", "toFloat"]
@@ -936,6 +1084,7 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "Float"]
+- !private ["So16UIViewControllerC", "NSNumber"]
 - !private ["So16UIViewControllerC", "NSString"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UIButton"]
@@ -946,39 +1095,59 @@ depends-member:
 - ["So16UIViewControllerC", "acButtonVar"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "display"]
-- ["So16UIViewControllerC", "displayString"]
+- ["So16UIViewControllerC", "divButton"]
 - ["So16UIViewControllerC", "divButtonVar"]
 - ["So16UIViewControllerC", "divFunc"]
+- ["So16UIViewControllerC", "eightButton"]
 - ["So16UIViewControllerC", "eightButtonVar"]
+- ["So16UIViewControllerC", "equalsButton"]
 - ["So16UIViewControllerC", "equalsButtonVar"]
+- ["So16UIViewControllerC", "firstNumSet"]
+- ["So16UIViewControllerC", "fiveButton"]
 - ["So16UIViewControllerC", "fiveButtonVar"]
+- ["So16UIViewControllerC", "fourButton"]
 - ["So16UIViewControllerC", "fourButtonVar"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "minusButton"]
 - ["So16UIViewControllerC", "minusButtonVar"]
 - ["So16UIViewControllerC", "minusFunc"]
 - ["So16UIViewControllerC", "multButtonVar"]
 - ["So16UIViewControllerC", "multFunc"]
+- ["So16UIViewControllerC", "multiplyButton"]
+- ["So16UIViewControllerC", "nineButton"]
 - ["So16UIViewControllerC", "nineButtonVar"]
 - ["So16UIViewControllerC", "num1"]
 - ["So16UIViewControllerC", "num2"]
+- ["So16UIViewControllerC", "oneButton"]
 - ["So16UIViewControllerC", "oneButtonVar"]
+- ["So16UIViewControllerC", "percentButton"]
 - ["So16UIViewControllerC", "percentButtonVar"]
+- ["So16UIViewControllerC", "plusButton"]
 - ["So16UIViewControllerC", "plusButtonVar"]
 - ["So16UIViewControllerC", "plusFunc"]
 - ["So16UIViewControllerC", "pmButton"]
 - ["So16UIViewControllerC", "pmButtonVar"]
+- ["So16UIViewControllerC", "pointButton"]
 - ["So16UIViewControllerC", "pointButtonVar"]
+- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "resetOperators"]
 - ["So16UIViewControllerC", "roundButtons"]
+- ["So16UIViewControllerC", "sevenButton"]
 - ["So16UIViewControllerC", "sevenButtonVar"]
+- ["So16UIViewControllerC", "sixButton"]
 - ["So16UIViewControllerC", "sixButtonVar"]
+- ["So16UIViewControllerC", "startVal"]
+- ["So16UIViewControllerC", "threeButton"]
 - ["So16UIViewControllerC", "threeButtonVar"]
 - ["So16UIViewControllerC", "toFloat"]
+- ["So16UIViewControllerC", "twoButton"]
 - ["So16UIViewControllerC", "twoButtonVar"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "zeroButton"]
 - ["So16UIViewControllerC", "zeroButtonVar"]
 - ["10calculator14ViewControllerC", "Bool"]
 - ["10calculator14ViewControllerC", "Float"]
+- !private ["10calculator14ViewControllerC", "NSNumber"]
 - !private ["10calculator14ViewControllerC", "NSString"]
 - ["10calculator14ViewControllerC", "String"]
 - ["10calculator14ViewControllerC", "UIButton"]
@@ -989,36 +1158,55 @@ depends-member:
 - ["10calculator14ViewControllerC", "deinit"]
 - ["10calculator14ViewControllerC", "didReceiveMemoryWarning"]
 - ["10calculator14ViewControllerC", "display"]
-- ["10calculator14ViewControllerC", "displayString"]
+- ["10calculator14ViewControllerC", "divButton"]
 - ["10calculator14ViewControllerC", "divButtonVar"]
 - ["10calculator14ViewControllerC", "divFunc"]
+- ["10calculator14ViewControllerC", "eightButton"]
 - ["10calculator14ViewControllerC", "eightButtonVar"]
+- ["10calculator14ViewControllerC", "equalsButton"]
 - ["10calculator14ViewControllerC", "equalsButtonVar"]
+- ["10calculator14ViewControllerC", "firstNumSet"]
+- ["10calculator14ViewControllerC", "fiveButton"]
 - ["10calculator14ViewControllerC", "fiveButtonVar"]
+- ["10calculator14ViewControllerC", "fourButton"]
 - ["10calculator14ViewControllerC", "fourButtonVar"]
 - ["10calculator14ViewControllerC", "init"]
+- ["10calculator14ViewControllerC", "minusButton"]
 - ["10calculator14ViewControllerC", "minusButtonVar"]
 - ["10calculator14ViewControllerC", "minusFunc"]
 - ["10calculator14ViewControllerC", "multButtonVar"]
 - ["10calculator14ViewControllerC", "multFunc"]
+- ["10calculator14ViewControllerC", "multiplyButton"]
+- ["10calculator14ViewControllerC", "nineButton"]
 - ["10calculator14ViewControllerC", "nineButtonVar"]
 - ["10calculator14ViewControllerC", "num1"]
 - ["10calculator14ViewControllerC", "num2"]
+- ["10calculator14ViewControllerC", "oneButton"]
 - ["10calculator14ViewControllerC", "oneButtonVar"]
+- ["10calculator14ViewControllerC", "percentButton"]
 - ["10calculator14ViewControllerC", "percentButtonVar"]
+- ["10calculator14ViewControllerC", "plusButton"]
 - ["10calculator14ViewControllerC", "plusButtonVar"]
 - ["10calculator14ViewControllerC", "plusFunc"]
 - ["10calculator14ViewControllerC", "pmButton"]
 - ["10calculator14ViewControllerC", "pmButtonVar"]
+- ["10calculator14ViewControllerC", "pointButton"]
 - ["10calculator14ViewControllerC", "pointButtonVar"]
+- !private ["10calculator14ViewControllerC", "print"]
 - ["10calculator14ViewControllerC", "resetOperators"]
 - ["10calculator14ViewControllerC", "roundButtons"]
+- ["10calculator14ViewControllerC", "sevenButton"]
 - ["10calculator14ViewControllerC", "sevenButtonVar"]
+- ["10calculator14ViewControllerC", "sixButton"]
 - ["10calculator14ViewControllerC", "sixButtonVar"]
+- ["10calculator14ViewControllerC", "startVal"]
+- ["10calculator14ViewControllerC", "threeButton"]
 - ["10calculator14ViewControllerC", "threeButtonVar"]
 - ["10calculator14ViewControllerC", "toFloat"]
+- ["10calculator14ViewControllerC", "twoButton"]
 - ["10calculator14ViewControllerC", "twoButtonVar"]
 - ["10calculator14ViewControllerC", "viewDidLoad"]
+- ["10calculator14ViewControllerC", "zeroButton"]
 - ["10calculator14ViewControllerC", "zeroButtonVar"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "clipsToBounds"]
@@ -1026,14 +1214,29 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setTitleColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "range"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "count"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "range"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "count"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "range"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "count"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "range"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
-- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "count"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "range"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "floatValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "range"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "stringValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSNumber"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -1042,13 +1245,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clipsToBounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "display"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "displayString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "divButtonVar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "divFunc"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "eightButtonVar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "equalsButtonVar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstNumSet"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fiveButtonVar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "floatValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fourButtonVar"]
@@ -1066,11 +1270,15 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "plusFunc"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pmButtonVar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pointButtonVar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "range"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resetOperators"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "roundButtons"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitleColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sevenButtonVar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sixButtonVar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startVal"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stringValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "threeButtonVar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toFloat"]
@@ -1080,53 +1288,62 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zeroButtonVar"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "black"]
-- ["s21_ObjectiveCBridgeableP", "init"]
-- ["s16_SwiftStringViewP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "range"]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["s16_SwiftStringViewP", "count"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "range"]
 depends-nominal:
-- "s23BidirectionalCollectionP"
+- !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
-- "s29CustomPlaygroundQuickLookableP"
-- "s17CustomReflectableP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "s9DecodableP"
-- "s9EncodableP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
-- "s25LosslessStringConvertibleP"
-- "s10MirrorPathP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
+- !private "So8NSNumberC"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "So7NSValueC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- "s26RangeReplaceableCollectionP"
+- !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
-- "s8SequenceP"
+- !private "s8SequenceP"
 - !private "s10SetAlgebraP"
-- "SS"
-- "s14StringProtocolP"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -1159,16 +1376,16 @@ depends-nominal:
 - "10calculator14ViewControllerC"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
-- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- "s33_ExpressibleByStringInterpolationP"
+- !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s21_ObjectiveCBridgeableP"
-- "s16_SwiftStringViewP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -1194,4 +1411,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e65c240c93ad3e2679558f16451db978"
+interface-hash: "a0366f8db3cd517ad521fee92e6e7407"

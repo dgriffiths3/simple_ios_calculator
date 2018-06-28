@@ -228,6 +228,7 @@ SWIFT_CLASS("_TtC10calculator14ViewController")
 - (IBAction)acButton:(id _Nonnull)sender;
 - (IBAction)pmButton:(id _Nonnull)sender;
 - (IBAction)percentButton:(id _Nonnull)sender;
+- (IBAction)pointButton:(id _Nonnull)sender;
 - (IBAction)divButton:(id _Nonnull)sender;
 - (IBAction)multiplyButton:(id _Nonnull)sender;
 - (IBAction)minusButton:(id _Nonnull)sender;
@@ -242,7 +243,6 @@ SWIFT_CLASS("_TtC10calculator14ViewController")
 - (IBAction)sevenButton:(id _Nonnull)sender;
 - (IBAction)eightButton:(id _Nonnull)sender;
 - (IBAction)nineButton:(id _Nonnull)sender;
-- (IBAction)pointButton:(id _Nonnull)sender;
 - (IBAction)equalsButton:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
