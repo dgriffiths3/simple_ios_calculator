@@ -196,7 +196,7 @@ SWIFT_CLASS("_TtC10calculator11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
+@class UILabel;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
@@ -205,7 +205,7 @@ SWIFT_CLASS("_TtC10calculator14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified display;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified display;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified plusButtonVar;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified minusButtonVar;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified multButtonVar;

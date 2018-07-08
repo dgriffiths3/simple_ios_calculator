@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         roundButtons()
         display.text = "0"
+        display.adjustsFontSizeToFitWidth = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -27,11 +28,13 @@ class ViewController: UIViewController {
     var multFunc: Bool = false
     var divFunc: Bool = false
     var num1: Float = 0.0
-    var num2: Float = 0.0
+    var percentVal: Float = 0.0
+    var tmp_string: String = ""
     var firstNumSet: Bool = false
     var startVal: Bool = true
+    var percentCalc: Bool = false
     
-    @IBOutlet weak var display: UITextField!
+    @IBOutlet weak var display: UILabel!
     
     @IBOutlet weak var plusButtonVar: UIButton!
     @IBOutlet weak var minusButtonVar: UIButton!
@@ -125,17 +128,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pmButton(_ sender: Any) {
-
+        
         if toFloat(value: display.text!) < 0 {
             display.text = NSNumber(value: (toFloat(value: display.text!) * -1)).stringValue
-        }
-        
-        if toFloat(value: display.text!) > 0 {
+        } else {
+            if toFloat(value: display.text!) > 0 {
             display.text = "-" + display.text!
+            }
         }
     }
     
     @IBAction func percentButton(_ sender: Any) {
+        
+        if plusFunc == true || minusFunc == true || multFunc == true || divFunc == true {
+            percentCalc = true
+            percentVal = toFloat(value: display.text!)
+            display.text = NSNumber(value: (percentVal*num1)/100).stringValue
+        } else {
+            display.text = NSNumber(value: (toFloat(value: display.text!) / 100)).stringValue
+        }
+        
     }
     
     @IBAction func pointButton(_ sender: Any) {
@@ -324,20 +336,40 @@ class ViewController: UIViewController {
     @IBAction func equalsButton(_ sender: Any) {
         
         if plusFunc == true{
-            display.text = NSNumber(value: (num1 + toFloat(value: display.text!))).stringValue
-            num1 = toFloat(value: display.text!)
+            if percentCalc == false{
+                display.text = NSNumber(value: (num1 + toFloat(value: display.text!))).stringValue
+                num1 = toFloat(value: display.text!)
+            } else {
+                display.text = NSNumber(value: (num1 + toFloat(value: display.text!))).stringValue
+                percentCalc = false
+            }
         }
         if minusFunc == true{
-            display.text = NSNumber(value: (num1 - toFloat(value: display.text!))).stringValue
-            num1 = toFloat(value: display.text!)
+            if percentCalc == false{
+                display.text = NSNumber(value: (num1 - toFloat(value: display.text!))).stringValue
+                num1 = toFloat(value: display.text!)
+            } else {
+                display.text = NSNumber(value: (num1 - toFloat(value: display.text!))).stringValue
+                percentCalc = false
+            }
         }
         if multFunc == true{
-            display.text = NSNumber(value: (num1 * toFloat(value: display.text!))).stringValue
-            num1 = toFloat(value: display.text!)
+            if percentCalc == false{
+                display.text = NSNumber(value: (num1 * toFloat(value: display.text!))).stringValue
+                num1 = toFloat(value: display.text!)
+            } else {
+                display.text = NSNumber(value: (num1 * toFloat(value: display.text!))).stringValue
+                percentCalc = false
+            }
         }
         if divFunc == true{
-            display.text = NSNumber(value: (num1 / toFloat(value: display.text!))).stringValue
-            num1 = toFloat(value: display.text!)
+            if percentCalc == false{
+                display.text = NSNumber(value: (num1 / toFloat(value: display.text!))).stringValue
+                num1 = toFloat(value: display.text!)
+            } else {
+                display.text = NSNumber(value: (num1 / toFloat(value: display.text!))).stringValue
+                percentCalc = false
+            }
         }
         
         resetOperators()
